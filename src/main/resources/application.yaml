@@ -1,0 +1,12 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.javierdesant.HttpKt.configureHttp
+      - com.javierdesant.SerializationKt.configureSerialization
+      - com.javierdesant.RequestValidationKt.configureRequestValidation
+      - com.javierdesant.StatusPagesKt.configureStatusPages
+      - com.javierdesant.ExposedKt.configureExposed
+      - com.javierdesant.HtmlDslKt.configureHtmlDsl
+      - com.javierdesant.RoutingKt.configureRouting
